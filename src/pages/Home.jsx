@@ -20,6 +20,9 @@ function Home(){
         {list.map((product) => (
           <div key={product.id}>
             <h3>{product.name}</h3>
+            <div className="img-wrap">
+                <img src={product.src} />
+            </div>
             <p>{product.price.toLocaleString()}원</p>
             <button
               onClick={() => dispatch(addToCart(product))}
