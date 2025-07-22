@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Header(){
     return(
         <header id="main-header">
@@ -62,7 +64,11 @@ function Header(){
                     </ul>
                 </nav>
                 <div className="icon-wrap">
-                    <div className="cart"></div>
+                    <div className="cart">
+                        <Link to='/cart'>
+                            cart
+                        </Link>
+                    </div>
                     <div className="user"></div>
                 </div>
             </div>

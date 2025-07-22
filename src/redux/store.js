@@ -1,8 +1,36 @@
-import { configureStore} from "@reduxjs/toolkit"; //스토어 생성
-// 리듀서(state변경규칙) 호출 (임의 이름)
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
+import { persistStore, persistReducer, FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER } from 'redux-persist';
 
-const store=configureStore({ //스토어 생성 후 슬라이스 등록
-    reducer:{ }
-})
+import storage from 'redux-persist/lib/storage';
 
-export default store
+import cartReducer from './slices/cartSlice';
+import productsReducer from './slices/productsSlice';
+
+
+const rootReducer = combineReducers({
+  products: productsReducer,
+  cart: cartReducer,
+});
+
+
+
+
+const persistConfig = {
+  key: 'root',
+  storage,
+  whitelist: ['cart']
+};
+
+const persistedReducer = persistReducer(persistConfig, rootReducer);
+
+export const store = configureStore({
+  reducer: persistedReducer,
+  middleware: (getDefaultMiddleware) =>
+    getDefaultMiddleware({
+      serializableCheck: {
+        ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
+      },
+    }),
+});
+
+export const persistor = persistStore(store);
