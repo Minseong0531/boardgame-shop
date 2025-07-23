@@ -69,7 +69,11 @@ function Header(){
                             cart
                         </Link>
                     </div>
-                    <div className="user"></div>
+                    <div className="user">
+                    <Link to='/wishlist'>
+                            wish
+                        </Link>
+                    </div>
                 </div>
             </div>
         </header>
