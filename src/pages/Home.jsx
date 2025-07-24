@@ -36,9 +36,8 @@ function Home(){
             </button>
             <button
               onClick={() => dispatch(toggleWishlist(product))}
-              style={{ color: isInWishlist(product.id) ? 'red' : 'gray' }}
             >
-              {isInWishlist(product.id) ? '♥ 찜 해제' : '♡ 찜하기'}
+              {isInWishlist(product.id) ? '찜 해제' : '찜하기'}
             </button>
           </div>
         ))}

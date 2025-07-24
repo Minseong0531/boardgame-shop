@@ -70,7 +70,7 @@ function Header(){
                         </Link>
                     </div>
                     <div className="user">
-                    <Link to='/wishlist'>
+                        <Link to='/wishlist'>
                             wish
                         </Link>
                     </div>
