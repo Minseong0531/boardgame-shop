@@ -7,29 +7,13 @@ function Header(){
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">Menu1</a>
-                            <div className="sub">
-                                <ul>
-                                    <li>sub1-1</li>
-                                    <li>sub1-1</li>
-                                    <li>sub1-1</li>
-                                    <li>sub1-1</li>
-                                </ul>
-                            </div>
+                            <a href="#">홈</a>
                         </li>
                         <li>
-                            <a href="#">Menu2</a>
-                            <div className="sub">
-                                <ul>
-                                    <li>sub2-1</li>
-                                    <li>sub2-1</li>
-                                    <li>sub2-1</li>
-                                    <li>sub2-1</li>
-                                </ul>
-                            </div>
+                            <a href="#">보드게임</a>
                         </li>
                         <li>
-                            <a href="#">Menu3</a>
+                            <a href="#">카테고리</a>
                             <div className="sub">
                                 <ul>
                                     <li>sub3-1</li>
@@ -40,7 +24,7 @@ function Header(){
                             </div>
                         </li>
                         <li>
-                            <a href="#">Menu4</a>
+                            <a href="#">이벤트</a>
                             <div className="sub">
                                 <ul>
                                     <li>sub4-1</li>
@@ -51,7 +35,7 @@ function Header(){
                             </div>
                         </li>
                         <li>
-                            <a href="#">Menu5</a>
+                            <a href="#">문의사항</a>
                             <div className="sub">
                                 <ul>
                                     <li>sub5-1</li>

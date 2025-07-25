@@ -25,3 +25,38 @@ ul{
 #main-header > .innerbox > .icon-wrap > div{
   width: 20px; height: 20px; background: #000;
 }
+
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+}
+
+
+
+
+
+.product-wrap{
+  display: flex; width: 1300px; margin: 0 auto; justify-content: space-between; padding-top: 50px;
+}
+
+.product-wrap > .products{
+
+}
+
+.product-wrap > .products > a > div{
+  width: 200px; height: 200px;
+}
+.product-wrap > .products > a > div > img{
+  width: 100%; height: 100%; object-fit: contain;
+}
