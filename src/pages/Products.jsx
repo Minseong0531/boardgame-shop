@@ -18,30 +18,57 @@ function Products() {
 
   console.log('상품 리스트:', list, status);
   return (
-    <div className='product-wrap'>
-      {list.map((product) => (
-          <div key={product.id} className='products'>
-            <Link to={`/product/${product.id}`}>
-              <div className="img-wrap">
-                  <img src={product.src} />
+    <section className='product-wrap'>
+      <div className="title">
+        <h2>BEST ITEM</h2>
+      </div>
+      <div className="flex">
+        <div className="list">
+          <ul className="best-item">
+            {list.map((product) => (
+              <li key={product.id} className='products'>
+                <div className='best-thumb'>
+                  <Link to={`/product/${product.id}`}>
+                    <img src={product.src} />
+                  </Link>
+                </div>
+                <div className='best-text'>
+                  <div className="btn-wrap">
+                    <button onClick={() => dispatch(addToCart(product))}>
+                      장바구니 담기
+                    </button>
+                    <button onClick={() => dispatch(toggleWishlist(product))}>
+                      {isInWishlist(product.id) ? '찜 해제' : '찜하기'}
+                    </button>
+                  </div>
+                  <Link to={`/product/${product.id}`}> 
+                    <h3>{product.name}</h3>
+                    <p>{product.price.toLocaleString()}원</p>
+                  </Link>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div className="sticky">
+          <div className="best-thumb">
+            <div className="thumb-area">
+              <div className="thumb">
+                <img src="/image/thumb/best-thumb.jpg" alt="썸네일" />
               </div>
-              <h3>{product.name}</h3>
-              <p>{product.price.toLocaleString()}원</p>
-            </Link>
-            <button
-              onClick={() => dispatch(addToCart(product))}
-            >
-              장바구니 담기
-            </button>
-            
-            <button
-              onClick={() => dispatch(toggleWishlist(product))}
-            >
-              {isInWishlist(product.id) ? '찜 해제' : '찜하기'}
-            </button>
+              <div className="text-area">
+                <h2>지금 가장 인기있는 보드게임!</h2>
+                <p>
+                  검증된 인기게임 <br />
+                  초보부터 고수까지 모두 추천
+                </p>
+              </div>
+            </div>
           </div>
-        ))}
-    </div>
+        </div>
+      </div>
+      
+    </section>
   );
 }
 
