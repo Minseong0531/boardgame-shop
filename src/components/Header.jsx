@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import SearchInput from "./SearchInput";
 
 function Header(){
     return(
@@ -47,6 +48,7 @@ function Header(){
                         </li>
                     </ul>
                 </nav>
+                <SearchInput />
                 <div className="icon-wrap">
                     <div className="cart">
                         <Link to='/cart'>
