@@ -8,7 +8,7 @@ function Header(){
                 <nav>
                     <ul>
                         <li>
-                            <a href="#">홈</a>
+                            <Link to='/'>홈</Link>
                         </li>
                         <li>
                             <a href="#">보드게임</a>

@@ -7,6 +7,7 @@ import Cart from './pages/Cart';
 import Wishlist from './pages/Wishlist';
 import ProductsDetail from './pages/ProductDetail';
 import SearchResults from './pages/SearchResults';
+import Category from './pages/Category';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             <Route path='/wishlist' element={<Wishlist />}/>
             <Route path='/product/:id' element={<ProductsDetail />}/>
             <Route path="/search" element={<SearchResults />} />
+            <Route path="/category" element={<Category />} />
           </Routes>
         </div>
       </section>

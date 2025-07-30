@@ -8,6 +8,7 @@ function Products() {
   const dispatch = useDispatch();
   const {list, status} = useSelector((state)=> state.products);
   const wishlistItems = useSelector(state => state.wishlist.items);
+  const MAX_PRODUCTS = 10;
   const isInWishlist = (id) => wishlistItems.some(item => item.id === id);
 
   useEffect(() => {
@@ -15,6 +16,9 @@ function Products() {
       dispatch(fetchProducts());
     }
   }, [dispatch, status]);
+
+  if (status === 'loading') return <div>로딩 중...</div>;
+  if (status === 'failed') return <div>상품을 불러오는 데 실패했습니다.</div>;
 
   console.log('상품 리스트:', list, status);
   return (
@@ -25,7 +29,7 @@ function Products() {
       <div className="flex">
         <div className="list">
           <ul className="best-item">
-            {list.map((product) => (
+            {list.slice(0, MAX_PRODUCTS).map((product) => (
               <li key={product.id} className='products'>
                 <div className='best-thumb'>
                   <Link to={`/product/${product.id}`}>
