@@ -1,0 +1,19 @@
+.main-banner{
+    height: calc(100vh - 60px);
+}
+.main-banner > div{
+    width: 100%; height: 100%; display: flex; position: relative;
+}
+.main-banner > div > .swiper-wrapper{
+    width: 100%; height: 100%;
+}
+.main-banner > div > .swiper-wrapper > .swiper-slide{
+    height: 100%;
+}
+.main-banner > div > .swiper-wrapper > .swiper-slide > div{
+    height: 100%; width: 100%;
+}
+.main-banner > div > .swiper-wrapper > .swiper-slide > div > img{
+    width: 100%; height: 100%; object-fit: cover;
+}
+

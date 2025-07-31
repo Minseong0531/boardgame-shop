@@ -34,6 +34,15 @@ ul{
   width: 20px; height: 20px; background: #000;
 }
 
+#main-header > .innerbox > .search-form{
+  margin-left: auto; margin-right: 20px;
+}
+
+
+.main-banner{
+  margin-top: 60px;
+}
+
 
 .swiper {
   width: 100%;
@@ -59,19 +68,19 @@ ul{
 }
 
 .product-wrap > .flex > .list{
-  padding: 80px; flex : 1 0 50%; box-sizing: border-box;
+  padding: 80px; flex : 1 0 50%; box-sizing: border-box; 
 }
 .product-wrap > .flex > .list > .best-item{
   display: grid; grid-template-columns: repeat(2, 1fr); gap: 50px 10px;
 }
-.product-wrap > .flex > .list > .best-item > .products{
-  width: 50%;
+.product-wrap > .flex > .list > .best-item > .products > .best-thumb{
+  max-width: 250px; max-height: 250px; border: #eee 0.5px solid;
 }
 .product-wrap > .flex > .list > .best-item > .products > .best-thumb > a{
-  width: 100%; height: 100%;
+  display: block; width: 100%; height: 100%; object-fit: cover;
 }
 .product-wrap > .flex > .list > .best-item > .products > .best-thumb > a > img{
-  width: 300px; height: 300px; object-fit: contain;
+  width: 100%; height: 100%; 
 }
 
 
@@ -82,10 +91,10 @@ ul{
   position: absolute; top: 0; left: 0; width: 100%; height: 100vh; overflow: hidden;
 }
 .product-wrap > .flex > .sticky > .best-thumb > .thumb-area{
-  height: 100%;
+  width: 100%; height: 100%;
 }
 .product-wrap > .flex > .sticky > .best-thumb > .thumb-area > .thumb{
-  height: 100%; position: relative;
+  width: 100%; height: 100%; position: relative;
 }
 .product-wrap > .flex > .sticky > .best-thumb > .thumb-area > .thumb > img{
   position: absolute; bottom: 0; left: 0; width: 100%; height: 100%;
@@ -103,10 +112,6 @@ ul{
 }
 .product-wrap > .flex > .sticky > .best-thumb > .thumb-area > .text-area > p{
   font-size: 1.25rem;
-}
-
-#category > .react-tabs{
-  
 }
 
 #category > .react-tabs > ul{
