@@ -1,0 +1,22 @@
+#category > .react-tabs > ul{
+    display: flex; gap: 20px; justify-content: center;
+  }
+  #category > .react-tabs > ul > li{
+    cursor: pointer;
+  }
+  
+  #category > .react-tabs > div{
+    padding: 80px;
+  }
+  #category > .react-tabs > div > .tab-panel{
+    display: flex; gap: 20px; justify-content: center;
+  }
+  #category > .react-tabs > div > .tab-panel > .item-box{
+    width: 250px; height: 300px;
+  }
+  #category > .react-tabs > div > .tab-panel > .item-box > a{
+    display: block; width: 100%; height: 100%;
+  }
+  #category > .react-tabs > div > .tab-panel > .item-box > a > img{
+    object-fit: contain; width: 250px; height: 300px;
+  }

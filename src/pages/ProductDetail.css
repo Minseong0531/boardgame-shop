@@ -1,0 +1,24 @@
+#product-detail{
+    margin-top: 60px; width: 100vw;
+}
+#product-detail > .inner-box{
+    width: 1300px; margin: 0 auto; display: flex; justify-content: space-around; align-items: center;
+}
+
+#product-detail > .inner-box > .img-wrap{
+    max-width: 400px; max-height: 400px;
+}
+#product-detail > .inner-box > .img-wrap > img{
+    width: 100%; object-fit: cover;
+}
+#product-detail > .inner-box > .text-wrap{
+    width: 40%;
+}
+
+#product-detail > .inner-box > .text-wrap > h2{
+    padding: 16px 16px 16px 0; border-bottom: 1px solid #ccc;
+}
+
+#product-detail > .inner-box > .text-wrap th{
+    text-align: left; min-width: 120px; padding: 5px 0px;
+}

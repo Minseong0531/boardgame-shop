@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import { toggleWishlist } from '../redux/slices/wishlistSlice';
 import { fetchProducts } from '../redux/slices/productsSlice';
 import { useEffect } from 'react';
+import './ProductDetail.css'
 
 function ProductsDetail() {
   const { id } = useParams();
@@ -23,16 +24,38 @@ function ProductsDetail() {
   if (!product) return <p>상품을 찾을 수 없습니다.</p>;
 
   return (
-    <div>
-      <div className="img-wrap">
-        <img src={product.src} alt='제품 이미지'/>
+    <div id='product-detail'>
+      <div className="inner-box">
+        <div className="img-wrap">
+          <img src={product.src} alt='제품 이미지'/>
+        </div>
+        <div className="text-wrap">
+          <h2>{product.name}</h2>
+          <table>
+            <tbody>
+              <tr>
+                <th>가격:</th>
+                <td>{product.price.toLocaleString()}원</td>
+              </tr>
+              <tr>
+                <th>카테고리:</th>
+                <td>{product.category}</td>
+              </tr>
+              <tr>
+                <th>브랜드:</th>
+                <td>{product.brand}</td>
+              </tr>
+              <tr>
+                <th>리뷰:</th>
+                <td>{product.reviewCount}</td>
+              </tr>
+            </tbody>
+          </table>
+          <button onClick={() => dispatch(addToCart(product))}>장바구니 담기</button>
+          <button onClick={() => dispatch(toggleWishlist(product))}>찜하기</button>
+        </div>
       </div>
-      <h2>{product.name}</h2>
-      <p>가격: {product.price.toLocaleString()}원</p>
-      <p>카테고리: {product.category}</p>
-      <button onClick={() => dispatch(addToCart(product))}>장바구니 담기</button>
-      <button onClick={() => dispatch(toggleWishlist(product))}>찜하기</button>
-      <img src={product.detail} alt="상품 상세" />
+        <img src={product.detail} alt="상품 상세" />
     </div>
   );
 }

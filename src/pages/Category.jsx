@@ -4,6 +4,8 @@ import 'react-tabs/style/react-tabs.css';
 import { fetchProducts } from "../redux/slices/productsSlice";
 import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
+import './Category.css'
+
 
 function Category(){
     const dispatch = useDispatch();
