@@ -1,6 +1,6 @@
 
 .main-banner{
-    position: relative;
+    position: relative; margin-top: 60px;
 }
 
 .main-banner::before{
@@ -18,9 +18,6 @@
 }
 .main-banner > div > .swiper-wrapper{
     width: 100%;
-}
-.main-banner > div > .swiper-wrapper > .swiper-slide{
-    
 }
 .main-banner > div > .swiper-wrapper > .swiper-slide > div{
      width: 100%;

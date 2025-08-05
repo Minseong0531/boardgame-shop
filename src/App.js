@@ -14,7 +14,6 @@ function App() {
   return (
       <section className="App">
         <Header />
-        <div>
           <Routes>
             <Route path='/' element={<Home />}/>
             <Route path='/cart' element={<Cart />}/>
@@ -23,7 +22,6 @@ function App() {
             <Route path="/search" element={<SearchResults />} />
             <Route path="/category" element={<Category />} />
           </Routes>
-        </div>
       </section>
   );
 }

@@ -1,10 +1,14 @@
 import { Link } from "react-router-dom";
 import SearchInput from "./SearchInput";
+import './Header.css';
 
 function Header(){
     return(
         <header id="main-header">
             <div className="innerbox">
+                <div className="logo-wrap">
+                    <img src="/image/logo/logo.png" alt="로고 이미지" />
+                </div>
                 <nav>
                     <ul>
                         <li>
@@ -37,14 +41,6 @@ function Header(){
                         </li>
                         <li>
                             <a href="#">문의사항</a>
-                            <div className="sub">
-                                <ul>
-                                    <li>sub5-1</li>
-                                    <li>sub5-1</li>
-                                    <li>sub5-1</li>
-                                    <li>sub5-1</li>
-                                </ul>
-                            </div>
                         </li>
                     </ul>
                 </nav>

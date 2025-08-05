@@ -15,9 +15,13 @@ const wishlistSlice = createSlice({
       } else {
         state.items.push(product);
       }
+    },
+    removeFromWish: (state, action) => {
+      const id = action.payload;
+      state.items = state.items.filter((i) => i.id !== id);
     }
   }
 });
 
-export const { toggleWishlist } = wishlistSlice.actions;
+export const { toggleWishlist, removeFromWish } = wishlistSlice.actions;
 export default wishlistSlice.reducer;

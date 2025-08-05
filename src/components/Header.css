@@ -1,0 +1,35 @@
+#main-header{
+    width: 100%; height: 60px; position: fixed; top: 0; z-index: 10; background: #fff;
+    box-shadow:0 1px 6px 2px #ccc;
+  }
+  
+  #main-header > .innerbox{
+    width: 90%; margin: 0 auto; display: flex; justify-content: space-between; align-items: center;
+  }
+  
+  #main-header > .innerbox > nav > ul{
+    display: flex; gap: 20px;
+  }
+  
+  #main-header > .innerbox > nav > ul > li > .sub{
+    display: none;
+  }
+  
+  #main-header > .innerbox > .icon-wrap{
+    display: flex; gap: 10px;
+  }
+  
+  #main-header > .innerbox > .icon-wrap > div{
+    width: 20px; height: 20px; background: #000;
+  }
+  
+  #main-header > .innerbox > .search-form{
+    margin-left: auto; margin-right: 20px;
+  }
+
+  #main-header > .innerbox > .logo-wrap{
+    height: 60px; width: 140px; position: relative;
+  }
+  #main-header > .innerbox > .logo-wrap > img{
+    position: absolute; top: 0; left: 0; height: 40px; padding: 10px;
+  }

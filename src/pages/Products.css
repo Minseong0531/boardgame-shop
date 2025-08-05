@@ -1,0 +1,64 @@
+.product-wrap > .flex{
+    position: relative; display: flex;
+  }
+  
+  .product-wrap > .flex > .list{
+    padding: 80px; display: flex; flex : 1 0 50%; box-sizing: border-box; justify-content: center;
+    max-width: 50%; width: 100%; box-sizing: border-box;
+  }
+  .product-wrap > .flex > .list > .best-item{
+    display: grid; grid-template-columns: repeat(2, 1fr); gap: 50px 30px;
+    padding: 0 20px;
+    
+  }
+  .product-wrap > .flex > .list > .best-item > .products > .best-thumb{
+    max-width: 250px; max-height: 250px; border: #eee 0.5px solid;
+  }
+  .product-wrap > .flex > .list > .best-item > .products > .best-thumb > a{
+    display: block; width: 100%; height: 100%; object-fit: cover;
+  }
+  .product-wrap > .flex > .list > .best-item > .products > .best-thumb > a > img{
+    width: 100%; height: 100%; 
+  }
+  
+  
+  .product-wrap > .flex > .sticky{
+    flex : 1 0 50%; position: sticky; top: 0; height: 100vh; background: #ccc;
+  }
+  .product-wrap > .flex > .sticky > .best-thumb{
+    position: absolute; top: 0; left: 0; width: 100%; height: 100vh; overflow: hidden;
+  
+  }
+  .product-wrap > .flex > .sticky > .best-thumb > .thumb-area{
+    width: 100%; height: 100%;
+  }
+  .product-wrap > .flex > .sticky > .best-thumb > .thumb-area > .thumb{
+    width: 100%; height: 100%; position: relative;
+  }
+  .product-wrap > .flex > .sticky > .best-thumb > .thumb-area > .thumb > img{
+    position: absolute; bottom: 0; left: 0; width: 100%; height: 100%;
+    object-fit: cover;
+  }
+  .product-wrap > .flex > .sticky > .best-thumb > .thumb-area > .thumb > img::before{
+    content: '';
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5214460784313726) 50%, rgba(255, 255, 255, 0) 100%);
+  }
+  .product-wrap > .flex > .sticky > .best-thumb > .thumb-area > .text-area{
+    position: absolute; bottom: 0px; padding: 50px; color: #fff;
+  }
+  .product-wrap > .flex > .sticky > .best-thumb > .thumb-area > .text-area > h2{
+    font-size: 2.5rem;
+  }
+  .product-wrap > .flex > .sticky > .best-thumb > .thumb-area > .text-area > p{
+    font-size: 1.25rem;
+  }
+  
+  .btn-wrap{
+    width: 100%; display: flex; justify-content: space-between;
+  }
+  
+  .to-cart,
+  .to-wish{
+    border:none;
+  }
+  

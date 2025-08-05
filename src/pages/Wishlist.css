@@ -1,0 +1,29 @@
+#wish-list{
+    margin-top: 80px;
+}
+
+#wish-list > .inner-box {
+    width: 1300px; margin: 0 auto;
+}
+#wish-list > .inner-box > .flex-wrap{
+    background: #ededed;
+}
+#wish-list > .inner-box > .flex-wrap > .flex{
+    display: flex; flex: 1 0 0; flex-flow: column; width: 100%;
+}
+#wish-list > .inner-box > .flex-wrap > .flex > .wish-wrap{
+    display: flex; position: relative; flex-grow: 1; padding: 15px 30px;
+}
+#wish-list > .inner-box > .flex-wrap > .flex > .wish-wrap > .thumb-left{
+    width: 100px; height: 100px; margin-right: 10px;
+    position: relative; left: 0; top: 0;
+}
+#wish-list > .inner-box > .flex-wrap > .flex > .wish-wrap > .thumb-left > img{
+    height: 100%; object-fit: cover;
+}
+#wish-list > .inner-box > .flex-wrap > .flex > .wish-wrap > a{
+    display: block; position: relative; flex-grow: 1; left: 0; top: 0; width: 100%;
+}
+#wish-list > .inner-box > .flex-wrap > .flex > .wish-wrap > .text-right > h3{
+    margin: 0;
+}

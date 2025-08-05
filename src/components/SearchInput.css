@@ -1,0 +1,17 @@
+
+.search-form > input{
+    width: 400px; height: 30px; border-radius: 4px; border: 0.5px solid #000; padding: 0 15px; margin-right: 10px;
+    line-height: 30px;
+}
+.search-form > input:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+.search-form{
+    height: 60px; display: flex; align-items: center; position: relative;
+}
+
+.search-form > button{
+    display: block; border: 0 none; background: #fff; position: absolute; right: 20px;
+}

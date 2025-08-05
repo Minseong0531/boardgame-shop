@@ -4,6 +4,10 @@ import { Link } from 'react-router-dom';
 import { toggleWishlist } from '../redux/slices/wishlistSlice';
 import { useEffect } from 'react';
 import { fetchProducts } from '../redux/slices/productsSlice';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import './Products.css';
 
 function Products() {
   const dispatch = useDispatch();
@@ -40,10 +44,10 @@ function Products() {
                 <div className='best-text'>
                   <div className="btn-wrap">
                     <button onClick={() => dispatch(addToCart(product))} className='to-cart'>
-                      장바구니 담기
+                      <AddShoppingCartIcon />
                     </button>
                     <button onClick={() => dispatch(toggleWishlist(product))} className='to-wish'>
-                      {isInWishlist(product.id) ? '찜 해제' : '찜하기'}
+                      {isInWishlist(product.id) ? <FavoriteIcon /> : <FavoriteBorderIcon/>}
                     </button>
                   </div>
                   <Link to={`/product/${product.id}`}> 

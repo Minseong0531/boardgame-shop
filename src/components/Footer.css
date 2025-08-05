@@ -1,0 +1,15 @@
+#main-footer{
+    min-height: 300px; background: #000; color: #fff;
+    padding: 40px;
+}
+
+#main-footer>.about,
+#main-footer>.support,
+#main-footer>.sns
+{
+    display: flex;
+}
+
+#main-footer> .sns > ul{
+    display: flex; gap: 15px; align-items: center;
+}

@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import SearchIcon from '@mui/icons-material/Search';
+import './SearchInput.css';
 
 function SearchInput() {
   const [input, setInput] = useState('');
@@ -21,7 +23,9 @@ function SearchInput() {
         onChange={(e) => setInput(e.target.value)}
         className="search-input"
       />
-      <button type="submit">검색</button>
+      <button type="submit">
+      <SearchIcon/>
+      </button>
     </form>
   );
 }
