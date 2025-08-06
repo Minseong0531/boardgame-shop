@@ -27,3 +27,9 @@
 #wish-list > .inner-box > .flex-wrap > .flex > .wish-wrap > .text-right > h3{
     margin: 0;
 }
+
+@media (max-width:490px){
+    #wish-list > .inner-box{
+        width: 100%;
+    }
+}

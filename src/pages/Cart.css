@@ -1,0 +1,39 @@
+table, td, tr, thead, tbody{
+    margin: 0; padding: 0;
+}
+
+table tr{
+    border: 1px solid #ccc;
+}
+
+#cart tr{
+    border: 0.5px solid #cdcdcd;
+}
+
+#cart{
+    margin-top: 80px;
+}
+
+#cart > .innerbox{
+    width: 1300px; margin: 0 auto;
+}
+
+#cart > .innerbox > table{
+    width: 100%; text-align: center;
+}
+
+#cart > .innerbox .thumb-wrap{
+    display: flex; align-items: center;
+    
+}
+
+#cart > .innerbox .thumb-wrap > img{
+    width: 100px; height: 100px; 
+    padding-right: 100px;
+}
+
+@media (max-width:760px){
+    #cart > .innerbox{
+        width: 100%;
+    }
+}

@@ -7,6 +7,7 @@ import { fetchProducts } from '../redux/slices/productsSlice';
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+
 import './Products.css';
 
 function Products() {

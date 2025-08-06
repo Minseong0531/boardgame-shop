@@ -4,13 +4,17 @@ import { useParams } from 'react-router-dom';
 import { toggleWishlist } from '../redux/slices/wishlistSlice';
 import { fetchProducts } from '../redux/slices/productsSlice';
 import { useEffect } from 'react';
+import FavoriteIcon from '@mui/icons-material/Favorite';
+import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
+import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
 import './ProductDetail.css'
 
 function ProductsDetail() {
   const { id } = useParams();
   const dispatch = useDispatch();
-
+  const isInWishlist = (id) => wishlistItems.some(item => item.id === id);
   const {list, status } = useSelector(state => state.products);
+  const wishlistItems = useSelector(state => state.wishlist.items);
 
   useEffect(() => {
     if (list.length === 0) {
@@ -51,8 +55,12 @@ function ProductsDetail() {
               </tr>
             </tbody>
           </table>
-          <button onClick={() => dispatch(addToCart(product))}>장바구니 담기</button>
-          <button onClick={() => dispatch(toggleWishlist(product))}>찜하기</button>
+          <button onClick={() => dispatch(addToCart(product))} className='to-cart'>
+            <AddShoppingCartIcon /> 장바구니 담기
+          </button>
+          <button onClick={() => dispatch(toggleWishlist(product))} className='to-wish'>
+            {isInWishlist(product.id) ? <FavoriteIcon /> : <FavoriteBorderIcon/>}
+          </button>
         </div>
       </div>
         <img src={product.detail} alt="상품 상세" />

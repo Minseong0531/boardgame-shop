@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import SearchInput from "./SearchInput";
+import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import StarBorderIcon from '@mui/icons-material/StarBorder';
 import './Header.css';
 
 function Header(){
@@ -48,12 +50,12 @@ function Header(){
                 <div className="icon-wrap">
                     <div className="cart">
                         <Link to='/cart'>
-                            cart
+                            <ShoppingBasketIcon/>
                         </Link>
                     </div>
                     <div className="user">
                         <Link to='/wishlist'>
-                            wish
+                            <StarBorderIcon/>
                         </Link>
                     </div>
                 </div>

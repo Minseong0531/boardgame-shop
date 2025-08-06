@@ -20,3 +20,41 @@
   #category > .react-tabs > div > .tab-panel > .item-box > a > img{
     object-fit: contain; width: 250px; height: 300px;
   }
+
+  #category .tab-btn{
+    width: 75px; height: 75px;
+    background: #fc0; border-radius: 50%;
+    text-align: center; line-height: 75px;
+  }
+
+  @media (max-width: 760px) {
+
+    #category > .react-tabs > ul{
+      display: flex; width: 100vw;
+      gap: 0; padding: 0; flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+    #category .tab-btn{
+      width: 50%; border-radius: 0; box-sizing: border-box;
+      font-size: 18px; font-weight: bold;
+      
+    }
+
+    
+    #category > .react-tabs > div{
+      padding: 20px;
+    }
+
+    #category > .react-tabs > div > .tab-panel{
+      margin: 10%;
+      display: flex; flex-flow: row wrap; justify-content: space-between;
+    }
+
+    #category > .react-tabs > div > .tab-panel > .item-box{
+      width: 150px; height: 150px; margin: 30px 0;
+    }
+    #category > .react-tabs > div > .tab-panel > .item-box > a > img{
+      object-fit: cover; width: 100%; height: 100%;
+    }
+  }

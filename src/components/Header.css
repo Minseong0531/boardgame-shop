@@ -20,7 +20,7 @@
   }
   
   #main-header > .innerbox > .icon-wrap > div{
-    width: 20px; height: 20px; background: #000;
+    width: 20px; height: 20px;
   }
   
   #main-header > .innerbox > .search-form{
@@ -32,4 +32,13 @@
   }
   #main-header > .innerbox > .logo-wrap > img{
     position: absolute; top: 0; left: 0; height: 40px; padding: 10px;
+  }
+
+  @media (max-width: 760px) {
+    #main-header{
+      width: 100vw;
+    }
+    #main-header > .innerbox > nav > ul{
+      display: none;
+    }
   }

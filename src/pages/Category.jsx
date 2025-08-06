@@ -30,6 +30,7 @@ function Category(){
                 </TabList>
                 {uniqueCategories.map((category) => (
                     <TabPanel key={category}>
+                        <h2>{category}</h2>
                         <div className="tab-panel">
                             {
                                 list
@@ -37,12 +38,14 @@ function Category(){
                                     .map((item) => (
                                         <div key={item.id} className="item-box">
                                             <Link to={`/product/${item.id}`} state={{ product: item }}>
-                                                <span className='best-rank'>{category}</span>
                                                 <img
                                                     src={item.src || 'error-img.jpg'}
                                                     alt={item.name}
                                                     className='bestitem-img'
                                                 />
+                                                <p className="item-name">
+                                                    {item.name}
+                                                </p>
                                                 <p className='item-price'>
                                                     <span className='gray-text'>
                                                         &#8361; {item.price.toLocaleString()}원
