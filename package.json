@@ -1,6 +1,6 @@
 {
   "name": "boardgame-shop",
-  "homepage":"https://github.com/Minseong0531/boardgame-shop",
+  "homepage": "https://github.com/Minseong0531/boardgame-shop",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
