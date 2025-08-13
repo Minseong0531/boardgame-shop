@@ -11,7 +11,7 @@ import { store } from './redux/store';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <Provider store={store}>
-    <BrowserRouter basename='/boardgame-shop'>
+    <BrowserRouter basename='/boardgame-shop/'>
       <App />
     </BrowserRouter>
   </Provider>
