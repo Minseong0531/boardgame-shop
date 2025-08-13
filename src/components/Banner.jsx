@@ -19,13 +19,13 @@ function Banner(){
                 className="mySwiper"
             >
                 <SwiperSlide>
-                    <img src="/image/banner/banner1.jpg" alt="배너1" />
+                    <img src="./image/banner/banner1.jpg" alt="배너1" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/image/banner/banner2.jpg" alt="배너2" />
+                    <img src="./image/banner/banner2.jpg" alt="배너2" />
                 </SwiperSlide>
                 <SwiperSlide>
-                    <img src="/image/banner/banner3.jpg" alt="배너3" />
+                    <img src="./image/banner/banner3.jpg" alt="배너3" />
                 </SwiperSlide>
             </Swiper>
         </div>

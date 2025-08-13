@@ -64,7 +64,7 @@ function Products() {
           <div className="best-thumb">
             <div className="thumb-area">
               <div className="thumb">
-                <img src="/image/thumb/best-thumb.jpg" alt="썸네일" />
+                <img src="./image/thumb/best-thumb.jpg" alt="썸네일" />
               </div>
               <div className="text-area">
                 <h2>지금 가장 인기있는 보드게임!</h2>

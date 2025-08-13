@@ -9,7 +9,7 @@ function Header(){
         <header id="main-header">
             <div className="innerbox">
                 <div className="logo-wrap">
-                    <img src="/image/logo/logo.png" alt="로고 이미지" />
+                    <img src="./image/logo/logo.png" alt="로고 이미지" />
                 </div>
                 <nav>
                     <ul>

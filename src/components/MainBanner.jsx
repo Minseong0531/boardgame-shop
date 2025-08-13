@@ -9,10 +9,10 @@ import 'swiper/css/pagination';
 
 
 const bannerImages = [
-  {src:'/image/banner/main_banner1.jpg'},
-  {src:'/image/banner/main_banner2.jpg'},
-  {src:'/image/banner/main_banner3.jpg'},
-  {src:'/image/banner/main_banner4.jpg'},
+  {src:'./image/banner/main_banner1.jpg'},
+  {src:'./image/banner/main_banner2.jpg'},
+  {src:'./image/banner/main_banner3.jpg'},
+  {src:'./image/banner/main_banner4.jpg'},
 ]
 
 function MainBanner() {
